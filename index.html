@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courseverse — Explore Everything You Can Study</title>
+  <meta name="description" content="A global encyclopedia of courses and fields of study. Search any course, degree or field — what it is, what you study, and what degrees exist around the world." />
+  <meta property="og:title" content="Courseverse — Explore Everything You Can Study" />
+  <meta property="og:description" content="A global encyclopedia of courses, fields and degrees. What is it? What do you study? What can you earn?" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230a0a14'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%2338bdf8' stroke-width='1.5'/%3E%3Cellipse cx='16' cy='16' rx='4.5' ry='10' fill='none' stroke='%2338bdf8' stroke-width='1.2'/%3E%3Cpath d='M6 16h20' stroke='%2338bdf8' stroke-width='1.2'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Sora:wght@300..800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#/" data-link>
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="16" cy="16" r="13"/>
+        <ellipse cx="16" cy="16" rx="5.5" ry="13"/>
+        <path d="M3 16h26"/>
+        <path d="M5.5 9.5c3 2 7 3 10.5 3s7.5-1 10.5-3M5.5 22.5c3-2 7-3 10.5-3s7.5 1 10.5 3"/>
+      </svg>
+      <span class="brand-word">Course<b>verse</b></span>
+    </a>
+    <nav class="site-nav">
+      <a href="#/" data-link class="nav-link" data-nav="home">Home</a>
+      <a href="#/browse" data-link class="nav-link" data-nav="browse">All Courses</a>
+      <a href="#/fields" data-link class="nav-link" data-nav="fields">Fields</a>
+      <a href="#/degrees" data-link class="nav-link" data-nav="degrees">Degrees</a>
+      <a href="#/countries" data-link class="nav-link" data-nav="countries">Countries</a>
+      <a href="#/about" data-link class="nav-link" data-nav="about">About</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-word">Course<b>verse</b></span>
+        <p>A global encyclopedia of courses and fields of study.<br/>What it is. What you study. What you can earn.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#/browse" data-link>All Courses</a>
+        <a href="#/fields" data-link>The 11 Fields</a>
+        <a href="#/degrees" data-link>Degrees & Qualifications</a>
+        <a href="#/countries" data-link>Countries</a>
+      </div>
+      <div class="footer-col">
+        <h4>Backbone</h4>
+        <span>UNESCO ISCED 2011 — education levels</span>
+        <span>ISCED-F 2013 — fields of education</span>
+        <span>Extended Courseverse layer — specializations</span>
+      </div>
+      <div class="footer-col">
+        <h4>Principles</h4>
+        <span>No career quizzes</span>
+        <span>No personality tests</span>
+        <span>No rankings</span>
+        <span>Just understanding the course</span>
+      </div>
+    </div>
+    <div class="footer-base">🌍 Courseverse — the open encyclopedia of everything you can study.</div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/courses-a.js"></script>
+  <script src="js/courses-b.js"></script>
+  <script src="js/courses-c.js"></script>
+  <script src="js/courses-d.js"></script>
+  <script src="js/courses-e.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
